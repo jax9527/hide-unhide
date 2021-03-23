@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import Logo from "./logo.png";
 
 class App extends Component {
     constructor(props){
@@ -24,14 +24,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div>
          <button onClick={this.handleClick}>
                  {this.state.isToggleOn ? "關閉圖片" : "打開圖片"}
          </button>
-         <div className="i-test"  
-              style={{display: this.state.display}} 
-         >         
-         <img src={"https://reactjs.org/logo-og.png"}/>
+         <div style={{display: this.state.display}} >         
+         <img src={Logo} alt="Logo"/>
          </div>               
       </div>
     );
