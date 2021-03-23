@@ -11,7 +11,6 @@ class App extends Component {
     this.bindClick = this.handleClick.bind(this);
   }
   handleClick = () => {
-
     this.setState(
       prevState => {
         return {
@@ -20,7 +19,6 @@ class App extends Component {
         }
       }
     )
-
   }
   render() {
     return (
