@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { SafeAreaView, View, Button, Image } from "react-native";
-import Logo from "./logo.png";
+import Logo from "./assets/logo.png";
 
 export default class APP extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export default class APP extends Component {
         />
         <View style={{ flex: 1 }}>
           {this.state.isToggleOn ? (
-            <Image source={Logo} style={{ width: "100%" }} />
+            <Image source={Logo} style={{ height: "100%" }} />
           ) : (
             <View />
           )}
